@@ -31,7 +31,7 @@ with open('exercise_input.csv', 'r') as input_file:
         }
         story_entries.append(story_entry)
 
-    # add names to list of voter of entries if they voted for this entry
+    # add names to list of voter of stories if they voted for this story
     for entry in input:
         for story in story_entries:
             if (entry['User story 1'] == story['title'] or
