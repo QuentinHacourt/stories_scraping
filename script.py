@@ -10,4 +10,8 @@ with open('exercise_input.csv', 'r') as input_file:
 
     # iterates over each entry in the file
     for entry in input:
-        print(entry)
+        # adds the story names from the
+        # "User story 1" column to the list of stories
+        stories.add(entry['User story 1'])
+
+print(stories)
